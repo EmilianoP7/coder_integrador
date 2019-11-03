@@ -1,0 +1,141 @@
+body {
+	margin:0
+}	
+
+
+html,body{
+	font-family:"Open Sans", Arial, sans-serif;
+	font-size:15px;
+	line-height:1.5;
+}
+
+html{
+	overflow-x:hidden;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Oswald";
+  letter-spacing: 2px;
+
+}
+
+h1{
+	font-size:36px;
+	}
+
+h2{
+	font-size:30px;
+}
+
+h3{
+	font-size:24px;
+} 
+
+h4 {
+	font-size:20px;
+}
+
+h5{
+font-size:18px;
+}
+
+h6{
+font-size:16px;
+}
+
+/* Navbar
+====================================
+*/
+
+.navbar {
+   padding: 20px !important;
+   text-transform: uppercase!important;
+   font-weight: 600;
+   font-family: 'Oswald', sans-serif;
+   letter-spacing: 2px;
+}
+
+.navbar-nav {
+   float: right ;
+}
+
+
+/* Home contenido
+====================================
+*/
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-transform: uppercase!important;
+
+}
+
+
+
+
+footer {
+  background-color: #343a40;
+  text-align: center;
+  color: white;
+  padding: 2.5%;
+  a {
+    color: white;
+    border-bottom: 1px dotted white;
+    &:hover, &:active, &:focus {
+      color: white;
+      border-bottom: 1px solid white;
+      text-decoration: none;
+    }
+  }
+}
+
+.text-picture {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  &.text-picture--gray-bg {
+    background-color: #EEE;
+  }
+  .text-picture__text {
+    h2 {
+      margin-top: 0;
+    }
+    @media (min-width: $grid-float-breakpoint) {
+      p:last-child {
+          margin-bottom: 0;
+      }
+    }    
+  }  
+  .text-picture__picture {
+    text-align: center;
+    img {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }   
+}
+
+// I only want Flexbox to kick in for larger devices.
+// i.e. I want to keep bootstraps mobile grid scaffolding intact.
+@media (min-width: $grid-float-breakpoint) {
+  .row--flex {
+    display: flex;
+    .row--flex__col {
+      align-self: flex-start;
+    }
+    .row--flex__col--center {
+      align-self: center;
+    }
+    .row--flex__col--bottom {
+      align-self: flex-end;
+    }
+  }
+}
+
+
+
